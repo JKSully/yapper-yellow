@@ -112,3 +112,8 @@ test_logs.txt
 dumped_armips/
 dumped_c/
 test_filter.txt
+
+.cache/
+compile_commands.json
+.zed/
+.vscode/
