@@ -2735,7 +2735,6 @@
 #define IS_ITEM_TR(item) \
     ((item) >= ITEM_TR00 && (item) <= ITEM_TR99)
 
-
 #ifndef __ASSEMBLER__
 enum ItemGeneration {
     CUSTOM,
@@ -2748,14 +2747,13 @@ enum ItemGeneration {
 };
 #else
 #define CUSTOM 0
-#define GEN4 1
-#define GEN5 2
-#define GEN6 3
-#define GEN7 4
-#define GEN8 5
-#define GEN9 6
+#define GEN4   1
+#define GEN5   2
+#define GEN6   3
+#define GEN7   4
+#define GEN8   5
+#define GEN9   6
 #endif
-
 
 #define ITEM_GENERATION(id) (                                           \
     (id) <= ITEM_ENIGMA_STONE ? GEN4 : (id) <= ITEM_REVEAL_GLASS ? GEN5 \
